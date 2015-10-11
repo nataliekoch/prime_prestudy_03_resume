@@ -1,0 +1,135 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+html {
+	height: 100%;
+}
+body {
+	background-color: #003855;
+	background-image: url("arches.png");
+	font-size: 18px;
+	height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+main {
+	max-width: 800px;
+	margin: auto;
+	line-height: 1.5;
+	box-sizing: content-box;
+	background-color: white;
+	padding: 0 25px 10px 25px;
+	background-image: url("arches.png");
+	display: none;
+}
+h1{
+	margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #002e47;
+}
+h2 {
+	padding-top: 15px;  
+	letter-spacing: 5px;
+	color: white;
+	background-color: #003f60;
+	max-width: 671px;
+    margin-left: -50px;
+    padding-left: 50px;
+}
+h3 {
+	position: relative;
+	letter-spacing: 1px;
+	margin-bottom: 0em; 
+	color: #002e47;
+}
+h3 span {
+	font-style: italic;
+	position: absolute;
+	right: 0px;
+	letter-spacing: normal;
+}
+
+ul li {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: -1em;
+	padding-left: 1em;
+	text-indent: -1em;
+	max-width: 671px;
+}
+ul {
+	margin-top: .5em;
+	margin-left: 0;
+	padding-left: 0;
+}
+p {
+	margin-top: .3em;
+	max-width: 671px;
+}
+a {
+	color: #00476B;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.contactinfo {
+	margin: 0;	
+}
+.summary, .info {
+	animation: fadein 2s .5s backwards;
+}
+.job, .job2 {
+	animation: fadein 2s 1s backwards;
+}
+.education {
+	animation: fadein 2s 1.5s backwards;
+}
+.volunteering {
+	animation: fadein 2s 2s backwards;
+}
+
+.button {
+	font-size: 30px;
+	letter-spacing: 5px;
+	display: block;
+	height: 100px;
+	width: 200px;
+	flex: none;
+}
+.button:hover{
+	background-color: #E6E6E6;
+
+}
+h2, .button {
+	box-shadow: 1px 1px #002e47,
+            2px 2px #002e47,
+            3px 3px #002e47,
+            4px 4px #002e47,
+            5px 5px #002e47,
+            6px 6px #002e47,
+            7px 7px #002e47,
+            8px 8px #002e47,
+	
+}
+h1, h2, h3 span, .button {
+	font-weight: normal;
+
+}
+h1, .contactinfo {
+	animation: fadein 2s;
+}
+body, .button {
+	font-family: Georgia, serif;
+	color: #003855;
+}
+@media (max-width: 700px) {
+	h3 span {
+		position: static;
+	}
+}
